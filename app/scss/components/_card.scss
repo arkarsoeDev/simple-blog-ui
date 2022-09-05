@@ -1,0 +1,207 @@
+// if u want to use specific, these are the variables that need to be set.
+// $border-radius
+// for color -- $secondary, $mid-grey
+// for font-size -- $c-font-lg, $c-font-sm, $c-font-nm, $c-font-xl
+$fontf-card-title: "Playfair Display", serif;
+
+.c-card {
+    min-width: 280px;
+    min-height: 330px;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 1rem;
+    border-radius: $border-radius;
+    padding: 0.5rem;
+
+    @include breakpoint(small) {
+        padding: 1rem;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: $secondary;
+
+        .c-card__title {
+            text-decoration: underline;
+        }
+    }
+
+    &__img {
+        min-width: 260px;
+        width: 100%;
+        height: 200px;
+        border-radius: $border-radius;
+        margin-bottom: 4px;
+
+        @include breakpoint(small) {
+            height: 250px;
+        }
+
+        @include breakpoint(large) {
+            height: 200px;
+        }
+    }
+
+    &__category {
+        margin-top: 10px;
+        margin-bottom: 0;
+        span:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+
+    &__title {
+        font-size: $c-font-lg;
+        font-family: $fontf-card-title;
+        margin-top: 10px;
+    }
+
+    &__info {
+        font-size: $c-font-nm;
+    }
+
+    &__figure {
+        margin-bottom: 8px;
+    }
+
+    &__figure-caption {
+        font-size: $c-font-sm;
+        color: $dark-grey;
+    }
+
+    &--small {
+        min-height: 200px;
+        min-width: 280px;
+
+        @include breakpoint(small) {
+            min-width: 340px;
+            display: flex;
+            gap: 10px;
+            min-height: auto;
+        }
+
+        @include breakpoint(large) {
+            min-width: 280px;
+            display: inline-block;
+            gap: 0;
+        }
+
+        .c-card {
+            &__img {
+                width: 100%;
+                height: 100px;
+
+                @include breakpoint(small) {
+                    min-width: 100px;
+                }
+
+                @include breakpoint(large) {
+                    min-width: 250px;
+                    width: 348px;
+                    height: 150px;
+                }
+            }
+
+            &__category {
+                margin-top: 10px;
+
+                @include breakpoint(small) {
+                    margin-top: 0;
+                }
+
+                @include breakpoint(large) {
+                    margin-top: 10px;
+                }
+            }
+
+            &__info {
+                font-size: $c-font-sm;
+                margin-top: 10px;
+            }
+
+            &__title {
+                font-size: $c-font-nm;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &--large {
+        &.c-card {
+            @include breakpoint(medium) {
+                width: 100%;
+                min-height: 300px;
+                display: flex;
+                flex-flow: row-reverse;
+                justify-content: space-between;
+            }
+        }
+
+        .c-card {
+            &__img {
+                @include breakpoint(medium) {
+                    min-width: 400px;
+                    min-height: 300px;
+                }
+            }
+
+            &__body {
+                @include breakpoint(medium) {
+                    width: 50%;
+                    padding-right: 10%;
+                }
+            }
+
+            &__category {
+                @include breakpoint(medium) {
+                    margin-top: 0;
+                }
+            }
+
+            &__title {
+                @include breakpoint(medium) {
+                    font-size: $c-font-xl;
+                }
+            }
+        }
+    }
+
+    &--horizontal {
+        &.c-card {
+            @include breakpoint(small) {
+                width: 100%;
+                min-height: 200px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .c-card {
+            &__img {
+                @include breakpoint(small) {
+                    min-width: 200px;
+                    max-width: 200px;
+                    height: 200px;
+                    margin-right: 10px;
+                }
+            }
+
+            &__body {
+                @include breakpoint(small) {
+                    width: 100%;
+                }
+            }
+
+            &__category {
+                @include breakpoint(small) {
+                    margin-top: 0;
+                }
+            }
+
+            &__title {
+                @include breakpoint(small) {
+                    font-size: $c-font-lg;
+                }
+            }
+        }
+    }
+}

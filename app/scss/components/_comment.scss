@@ -1,0 +1,27 @@
+.comment{
+   background-color: $secondary;
+   padding: 1rem;
+   margin-bottom: 1rem;
+   border-radius: $border-radius;
+
+   &__date {
+      font-size: $c-font-sm;
+      text-align: right;
+   }
+
+   &__content{
+      display: flex;
+   }
+
+   &__avatar{
+      min-width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      border-radius: $border-radius-pill;
+      background-color: black;
+   }
+
+   &__text{
+      font-size: $c-font-sm;
+   }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "sass": "^1.54.8"
+  },
+  "scripts": {
+    "compile:sass": "sass --watch app/scss/main.scss:dist/css/main.css",
+    "minify": "sass dist/css/main.css:dist/css/main.min.css --style compressed && minify app/js/main.js > dist/js/main.min.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
