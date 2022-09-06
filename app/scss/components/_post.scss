@@ -1,4 +1,4 @@
-$fontf-post-title: "Playfair Display", serif;
+$fontf-post-title: "Barlow", sans-serif;
 
 .post {
     min-width: 280px;
@@ -18,6 +18,11 @@ $fontf-post-title: "Playfair Display", serif;
 
     &__title {
         font-family: $fontf-post-title;
+        margin-bottom: 1.5rem;
+    }
+
+    &__para {
+        text-indent: 30%;
     }
 
     &__img {
