@@ -5,6 +5,7 @@
     font-size: $c-font-lg;
     text-transform: capitalize;
     text-decoration: underline;
+    font-weight: bold;
     color: $dark;
 
     @include on-event {

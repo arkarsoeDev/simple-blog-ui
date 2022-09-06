@@ -4,8 +4,8 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: "Roboto Condensed", sans-serif, "Open Sans",
-    "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$text-font-stack: "Open Sans", "Helvetica Neue Light", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -28,6 +28,10 @@ $xlight-grey: rgb(246, 246, 246) !default;
 /// @type Color
 $light-grey: rgb(237, 237, 237) !default;
 
+/// normal grey
+/// @type Color
+$normal-grey: rgb(200, 200, 200) !default;
+
 /// Medium grey
 /// @type Color
 $mid-grey: rgb(153, 153, 153) !default;
@@ -41,6 +45,7 @@ $dark-grey: rgb(68, 68, 68) !default;
 $max-width: 1180px !default;
 
 //font-size
+$c-font-xxs: 12px;
 $c-font-xs: 14px;
 $c-font-sm: 16px;
 $c-font-nm: 18px;
@@ -48,5 +53,8 @@ $c-font-lg: 25px;
 $c-font-xl: 31.25px;
 
 //custom color
+$white: hsl(0, 0%, 100%);
+$dark: hsl(0, 0%, 0%);
+
 $support-color: rgba(255, 255, 0, 0.534);
-$bg-color: #ffd8a9;
+$bg-color: $white;
