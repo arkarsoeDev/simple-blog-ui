@@ -2,8 +2,7 @@
 // $border-radius
 // for color -- $secondary, $mid-grey
 // for font-size -- $c-font-lg, $c-font-sm, $c-font-nm, $c-font-xl
-// $fontf-card-title: "Playfair Display", serif;
-$fontf-card-title: "Barlow", sans-serif;
+$fontf-card-title: "Roboto", sans-serif;
 
 .c-card {
     min-width: 280px;
@@ -53,9 +52,15 @@ $fontf-card-title: "Barlow", sans-serif;
     }
 
     &__title {
-        font-size: $c-font-lg;
+        font-size: $c-font-xl;
         font-family: $fontf-card-title;
+        font-weight: 500;
+        color: $primary;
         margin-top: 10px;
+    }
+
+    &__excert {
+        font-size: $c-font-sm;
     }
 
     &__info {
@@ -88,21 +93,35 @@ $fontf-card-title: "Barlow", sans-serif;
             gap: 0;
         }
 
-        .c-card {
-            &__img {
-                width: 180px;
-                height: 100px;
+        &.c-card {
+            padding: 0;
 
-                @include breakpoint(small) {
-                    min-width: 100px;
-                }
+            @include on-event {
+                cursor: default;
+                background-color: $white;
+                border: 1px solid transparent;
 
-                @include breakpoint(large) {
-                    min-width: 250px;
-                    width: 348px;
-                    height: 150px;
+                .c-card__title {
+                    text-decoration: none;
                 }
             }
+        }
+
+        .c-card {
+            // &__img {
+            //     width: 180px;
+            //     height: 100px;
+
+            //     @include breakpoint(small) {
+            //         min-width: 100px;
+            //     }
+
+            //     @include breakpoint(large) {
+            //         min-width: 250px;
+            //         width: 348px;
+            //         height: 150px;
+            //     }
+            // }
 
             &__category {
                 margin-top: 10px;
@@ -119,11 +138,21 @@ $fontf-card-title: "Barlow", sans-serif;
             &__info {
                 font-size: $c-font-xs;
                 margin-top: 10px;
+                margin-bottom: 0px;
             }
 
             &__title {
                 font-size: $c-font-nm;
-                margin-bottom: 0;
+                margin-bottom: 0.5rem;
+
+                @include on-event {
+                    cursor: pointer;
+                    text-decoration: underline !important;
+                }
+            }
+
+            &__excert {
+                font-size: $c-font-xs;
             }
         }
     }
@@ -162,7 +191,7 @@ $fontf-card-title: "Barlow", sans-serif;
 
             &__title {
                 @include breakpoint(medium) {
-                    font-size: $c-font-xl;
+                    font-size: $c-font-xxl;
                 }
             }
         }
@@ -198,6 +227,10 @@ $fontf-card-title: "Barlow", sans-serif;
                 @include breakpoint(small) {
                     margin-top: 0;
                 }
+            }
+
+            &__info {
+                font-size: $c-font-xs;
             }
 
             &__title {
