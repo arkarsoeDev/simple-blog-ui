@@ -4,8 +4,8 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: "Open Sans", "Helvetica Neue Light", "Helvetica Neue",
-    "Helvetica", "Arial", sans-serif !default;
+$text-font-stack: "Nunito", "Open Sans", "Helvetica Neue Light",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -49,8 +49,9 @@ $c-font-xxs: 12px;
 $c-font-xs: 14px;
 $c-font-sm: 16px;
 $c-font-nm: 18px;
-$c-font-lg: 25px;
-$c-font-xl: 31.25px;
+$c-font-lg: 22px;
+$c-font-xl: 25px;
+$c-font-xxl: 31.25px;
 
 //custom color
 $white: hsl(0, 0%, 100%);

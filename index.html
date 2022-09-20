@@ -9,24 +9,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
-
-        <!-- RobotoSlab -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&display=swap"
-            rel="stylesheet"
-        />
-
-        <!-- Barlow -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;700&display=swap"
-            rel="stylesheet"
-        />
-
-        <!-- open sans -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-            rel="stylesheet"
-        />
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-lg-5">
@@ -49,7 +31,7 @@
                     class="collapse navbar-collapse"
                     id="navbarSupportedContent"
                 >
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-0">
                         <li class="nav-item">
                             <a
                                 class="nav-link active"
@@ -70,16 +52,16 @@
                             <a class="nav-link" href="#">Register</a>
                         </li>
                         <li class="nav-item">
-                            <div id="" class="c-dropdown my-2 my-lg-0 me-3">
+                            <div id="" class="c-dropdown my-2 my-lg-0 ms-lg-3">
                                 <button
-                                    class="c-dropdown__btn c-dropdown__btn--row"
+                                    class="c-dropdown__btn c-dropdown__btn--row rounded-5"
                                     type="button"
                                     aria-expanded="false"
                                 >
                                     <div class="c-dropdown__img"></div>
                                     <span class="disabled">Arkar Soe</span>
                                 </button>
-                                <ul class="c-dropdown__menu">
+                                <ul class="c-dropdown__menu rounded-4">
                                     <li>
                                         <a class="c-dropdown__item" href="#"
                                             >dashboar</a
@@ -97,7 +79,7 @@
                 </div>
             </div>
         </nav>
-        <div class="row m-3 m-lg-5">
+        <div class="row m-3 mb-4 m-lg-5">
             <div class="c-heading p-4 p-lg-5">
                 <h1 class="text-center h2">
                     As a general rule, the most successful man in life is the
@@ -106,41 +88,77 @@
             </div>
         </div>
         <div class="container">
-            <div class="row mt-3 mt-lg-5">
-                <div class="mb-3 mb-lg-5">
+            <div class="row my-5">
+                <div class="">
                     <h2 class="c-title"><span>Latest blog</span></h2>
                 </div>
-                <div class="col-12">
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-12">
                     <div class="c-card c-card--large">
                         <figure class="c-card__figure">
                             <img
-                                src="img/test-1_1920.jpg"
+                                src="img/test-1_1280.jpg"
                                 class="c-card__img"
                                 alt="..."
                             />
-                            <figcaption class="c-card__figure-caption">
-                                A caption for the above image.
-                            </figcaption>
                         </figure>
                         <div class="c-card__body">
-                            <p class="c-card__category">
-                                <span class="badge bg-primary">News</span>
+                            <div
+                                class="d-flex justify-content-between align-items-center"
+                            >
+                                <a href="cat"
+                                    ><span
+                                        class="badge bg-primary rounded-4 c-card__category mb-1"
+                                        >News</span
+                                    ></a
+                                >
+                                <a href="date">
+                                    <span class="fw-bold c-card__date"
+                                        >19 / September / 22</span
+                                    >
+                                </a>
+                            </div>
+                            <a href="title">
+                                <p class="c-card__title">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Labore, vero.
+                                </p>
+                            </a>
+                            <p class="c-card__excerpt">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Totam nesciunt Lorem ...
                             </p>
-                            <p class="c-card__title">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Labore, vero.
-                            </p>
-                            <p class="c-card__info">
-                                <span>Author</span> <span class="">-</span>
-                                <span>00 000 000</span>
-                            </p>
+                            <div class="flex-fill"></div>
+                            <div
+                                class="d-flex justify-content-between align-items-center"
+                            >
+                                <a href="profile">
+                                    <div
+                                        class="d-flex justify-content-between align-items-center"
+                                    >
+                                        <div
+                                            class="bg-dark rounded-circle p-3 me-2 c-card__profile"
+                                        ></div>
+                                        <span class="fw-bold c-card__author"
+                                            >Arkar Soe</span
+                                        >
+                                    </div>
+                                </a>
+                                <a href="readmore">
+                                    <button
+                                        class="btn btn-outline-primary rounded-5 c-card__btn"
+                                    >
+                                        Read More
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="spacer"></div>
-            <div class="row mt-3">
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="spacer d-none d-lg-block mb-3"></div>
+                <div class="col-12 col-sm-6 col-lg-4">
                     <div class="c-card">
                         <figure class="c-card__figure">
                             <img
@@ -148,243 +166,558 @@
                                 class="c-card__img"
                                 alt="..."
                             />
-                            <figcaption class="c-card__figure-caption">
-                                A caption for the above image.
-                            </figcaption>
                         </figure>
                         <div class="c-card__body">
-                            <p class="c-card__category">
-                                <span class="badge bg-primary">News</span>
+                            <div
+                                class="d-flex justify-content-between align-items-center"
+                            >
+                                <a href="cat"
+                                    ><span
+                                        class="badge bg-primary rounded-4 c-card__category mb-1"
+                                        >News</span
+                                    ></a
+                                >
+                                <a href="date">
+                                    <span class="fw-bold c-card__date"
+                                        >19 / September / 22</span
+                                    >
+                                </a>
+                            </div>
+                            <a href="title">
+                                <p class="c-card__title">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Labore, vero.
+                                </p>
+                            </a>
+                            <p class="c-card__excerpt">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Totam nesciunt Lorem ...
                             </p>
-                            <p class="c-card__title">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Labore, vero.
-                            </p>
-                            <p class="c-card__info">
-                                <span>Author</span> <span class="">-</span>
-                                <span>00 000 000</span>
-                            </p>
+                            <div class="flex-fill"></div>
+                            <div
+                                class="d-flex justify-content-between align-items-center"
+                            >
+                                <a href="profile">
+                                    <div
+                                        class="d-flex justify-content-between align-items-center"
+                                    >
+                                        <div
+                                            class="bg-dark rounded-circle p-3 me-2 c-card__profile"
+                                        ></div>
+                                        <span class="fw-bold c-card__author"
+                                            >Arkar Soe</span
+                                        >
+                                    </div>
+                                </a>
+                                <a href="readmore">
+                                    <button
+                                        class="btn btn-outline-primary rounded-5 c-card__btn"
+                                    >
+                                        Read More
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-6 col-lg-4">
                     <div class="c-card">
                         <figure class="c-card__figure">
                             <img
-                                src="img/football.jpg"
+                                src="img/test-1_1280.jpg"
                                 class="c-card__img"
                                 alt="..."
                             />
-                            <figcaption class="c-card__figure-caption">
-                                A caption for the above image.
-                            </figcaption>
                         </figure>
                         <div class="c-card__body">
-                            <p class="c-card__category">
-                                <span class="badge bg-primary">News</span>
+                            <div
+                                class="d-flex justify-content-between align-items-center"
+                            >
+                                <a href="cat"
+                                    ><span
+                                        class="badge bg-primary rounded-4 c-card__category mb-1"
+                                        >News</span
+                                    ></a
+                                >
+                                <a href="date">
+                                    <span class="fw-bold c-card__date"
+                                        >19 / September / 22</span
+                                    >
+                                </a>
+                            </div>
+                            <a href="title">
+                                <p class="c-card__title">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Labore, vero.
+                                </p>
+                            </a>
+                            <p class="c-card__excerpt">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Totam nesciunt Lorem ...
                             </p>
-                            <p class="c-card__title">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Labore, vero.
-                            </p>
-                            <p class="c-card__info">
-                                <span>Author</span> <span class="">-</span>
-                                <span>00 000 000</span>
-                            </p>
+                            <div class="flex-fill"></div>
+                            <div
+                                class="d-flex justify-content-between align-items-center"
+                            >
+                                <a href="profile">
+                                    <div
+                                        class="d-flex justify-content-between align-items-center"
+                                    >
+                                        <div
+                                            class="bg-dark rounded-circle p-3 me-2 c-card__profile"
+                                        ></div>
+                                        <span class="fw-bold c-card__author"
+                                            >Arkar Soe</span
+                                        >
+                                    </div>
+                                </a>
+                                <a href="readmore">
+                                    <button
+                                        class="btn btn-outline-primary rounded-5 c-card__btn"
+                                    >
+                                        Read More
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-6 col-lg-4">
                     <div class="c-card">
                         <figure class="c-card__figure">
                             <img
-                                src="img/football.jpg"
+                                src="img/test-1_1280.jpg"
                                 class="c-card__img"
                                 alt="..."
                             />
-                            <figcaption class="c-card__figure-caption">
-                                A caption for the above image.
-                            </figcaption>
                         </figure>
                         <div class="c-card__body">
-                            <p class="c-card__category">
-                                <span class="badge bg-primary">News</span>
+                            <div
+                                class="d-flex justify-content-between align-items-center"
+                            >
+                                <a href="cat"
+                                    ><span
+                                        class="badge bg-primary rounded-4 c-card__category mb-1"
+                                        >News</span
+                                    ></a
+                                >
+                                <a href="date">
+                                    <span class="fw-bold c-card__date"
+                                        >19 / September / 22</span
+                                    >
+                                </a>
+                            </div>
+                            <a href="title">
+                                <p class="c-card__title">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Labore, vero.
+                                </p>
+                            </a>
+                            <p class="c-card__excerpt">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Totam nesciunt Lorem ...
                             </p>
-                            <p class="c-card__title">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Labore, vero.
-                            </p>
-                            <p class="c-card__info">
-                                <span>Author</span> <span class="">-</span>
-                                <span>00 000 000</span>
-                            </p>
+                            <div class="flex-fill"></div>
+                            <div
+                                class="d-flex justify-content-between align-items-center"
+                            >
+                                <a href="profile">
+                                    <div
+                                        class="d-flex justify-content-between align-items-center"
+                                    >
+                                        <div
+                                            class="bg-dark rounded-circle p-3 me-2 c-card__profile"
+                                        ></div>
+                                        <span class="fw-bold c-card__author"
+                                            >Arkar Soe</span
+                                        >
+                                    </div>
+                                </a>
+                                <a href="readmore">
+                                    <button
+                                        class="btn btn-outline-primary rounded-5 c-card__btn"
+                                    >
+                                        Read More
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="spacer"></div>
-            <div class="my-3 my-lg-5">
-                <h3 class="mb-3 mb-lg-5 c-title">Recent blogs</h3>
+            <div class="my-5">
+                <h3 class="mb-5 c-title">Recent blogs</h3>
                 <div class="row g-xl-3">
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="c-card">
                             <figure class="c-card__figure">
                                 <img
-                                    src="img/football.jpg"
+                                    src="img/test-1_1280.jpg"
                                     class="c-card__img"
                                     alt="..."
                                 />
-                                <figcaption class="c-card__figure-caption">
-                                    A caption for the above image.
-                                </figcaption>
                             </figure>
                             <div class="c-card__body">
-                                <p class="c-card__category">
-                                    <span class="badge bg-primary">News</span>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <a href="cat"
+                                        ><span
+                                            class="badge bg-primary rounded-4 c-card__category mb-1"
+                                            >News</span
+                                        ></a
+                                    >
+                                    <a href="date">
+                                        <span class="fw-bold c-card__date"
+                                            >19 / September / 22</span
+                                        >
+                                    </a>
+                                </div>
+                                <a href="title">
+                                    <p class="c-card__title">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Labore, vero.
+                                    </p>
+                                </a>
+                                <p class="c-card__excerpt">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Totam nesciunt Lorem ...
                                 </p>
-                                <p class="c-card__title">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Labore, vero.
-                                </p>
-                                <p class="c-card__info">
-                                    <span>Author</span> <span class="">-</span>
-                                    <span>00 000 000</span>
-                                </p>
+                                <div class="flex-fill"></div>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <a href="profile">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center"
+                                        >
+                                            <div
+                                                class="bg-dark rounded-circle p-3 me-2 c-card__profile"
+                                            ></div>
+                                            <span class="fw-bold c-card__author"
+                                                >Arkar Soe</span
+                                            >
+                                        </div>
+                                    </a>
+                                    <a href="readmore">
+                                        <button
+                                            class="btn btn-outline-primary rounded-5 c-card__btn"
+                                        >
+                                            Read More
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="c-card">
                             <figure class="c-card__figure">
                                 <img
-                                    src="img/football.jpg"
+                                    src="img/test-1_1280.jpg"
                                     class="c-card__img"
                                     alt="..."
                                 />
-                                <figcaption class="c-card__figure-caption">
-                                    A caption for the above image.
-                                </figcaption>
                             </figure>
                             <div class="c-card__body">
-                                <p class="c-card__category">
-                                    <span class="badge bg-primary">News</span>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <a href="cat"
+                                        ><span
+                                            class="badge bg-primary rounded-4 c-card__category mb-1"
+                                            >News</span
+                                        ></a
+                                    >
+                                    <a href="date">
+                                        <span class="fw-bold c-card__date"
+                                            >19 / September / 22</span
+                                        >
+                                    </a>
+                                </div>
+                                <a href="title">
+                                    <p class="c-card__title">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Labore, vero.
+                                    </p>
+                                </a>
+                                <p class="c-card__excerpt">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Totam nesciunt Lorem ...
                                 </p>
-                                <p class="c-card__title">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Labore, vero.
-                                </p>
-                                <p class="c-card__info">
-                                    <span>Author</span> <span class="">-</span>
-                                    <span>00 000 000</span>
-                                </p>
+                                <div class="flex-fill"></div>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <a href="profile">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center"
+                                        >
+                                            <div
+                                                class="bg-dark rounded-circle p-3 me-2 c-card__profile"
+                                            ></div>
+                                            <span class="fw-bold c-card__author"
+                                                >Arkar Soe</span
+                                            >
+                                        </div>
+                                    </a>
+                                    <a href="readmore">
+                                        <button
+                                            class="btn btn-outline-primary rounded-5 c-card__btn"
+                                        >
+                                            Read More
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="c-card">
                             <figure class="c-card__figure">
                                 <img
-                                    src="img/football.jpg"
+                                    src="img/test-1_1280.jpg"
                                     class="c-card__img"
                                     alt="..."
                                 />
-                                <figcaption class="c-card__figure-caption">
-                                    A caption for the above image.
-                                </figcaption>
                             </figure>
                             <div class="c-card__body">
-                                <p class="c-card__category">
-                                    <span class="badge bg-primary">News</span>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <a href="cat"
+                                        ><span
+                                            class="badge bg-primary rounded-4 c-card__category mb-1"
+                                            >News</span
+                                        ></a
+                                    >
+                                    <a href="date">
+                                        <span class="fw-bold c-card__date"
+                                            >19 / September / 22</span
+                                        >
+                                    </a>
+                                </div>
+                                <a href="title">
+                                    <p class="c-card__title">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Labore, vero.
+                                    </p>
+                                </a>
+                                <p class="c-card__excerpt">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Totam nesciunt Lorem ...
                                 </p>
-                                <p class="c-card__title">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Labore, vero.
-                                </p>
-                                <p class="c-card__info">
-                                    <span>Author</span> <span class="">-</span>
-                                    <span>00 000 000</span>
-                                </p>
+                                <div class="flex-fill"></div>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <a href="profile">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center"
+                                        >
+                                            <div
+                                                class="bg-dark rounded-circle p-3 me-2 c-card__profile"
+                                            ></div>
+                                            <span class="fw-bold c-card__author"
+                                                >Arkar Soe</span
+                                            >
+                                        </div>
+                                    </a>
+                                    <a href="readmore">
+                                        <button
+                                            class="btn btn-outline-primary rounded-5 c-card__btn"
+                                        >
+                                            Read More
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="c-card">
                             <figure class="c-card__figure">
                                 <img
-                                    src="img/football.jpg"
+                                    src="img/test-1_1280.jpg"
                                     class="c-card__img"
                                     alt="..."
                                 />
-                                <figcaption class="c-card__figure-caption">
-                                    A caption for the above image.
-                                </figcaption>
                             </figure>
                             <div class="c-card__body">
-                                <p class="c-card__category">
-                                    <span class="badge bg-primary">News</span>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <a href="cat"
+                                        ><span
+                                            class="badge bg-primary rounded-4 c-card__category mb-1"
+                                            >News</span
+                                        ></a
+                                    >
+                                    <a href="date">
+                                        <span class="fw-bold c-card__date"
+                                            >19 / September / 22</span
+                                        >
+                                    </a>
+                                </div>
+                                <a href="title">
+                                    <p class="c-card__title">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Labore, vero.
+                                    </p>
+                                </a>
+                                <p class="c-card__excerpt">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Totam nesciunt Lorem ...
                                 </p>
-                                <p class="c-card__title">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Labore, vero.
-                                </p>
-                                <p class="c-card__info">
-                                    <span>Author</span> <span class="">-</span>
-                                    <span>00 000 000</span>
-                                </p>
+                                <div class="flex-fill"></div>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <a href="profile">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center"
+                                        >
+                                            <div
+                                                class="bg-dark rounded-circle p-3 me-2 c-card__profile"
+                                            ></div>
+                                            <span class="fw-bold c-card__author"
+                                                >Arkar Soe</span
+                                            >
+                                        </div>
+                                    </a>
+                                    <a href="readmore">
+                                        <button
+                                            class="btn btn-outline-primary rounded-5 c-card__btn"
+                                        >
+                                            Read More
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="c-card">
                             <figure class="c-card__figure">
                                 <img
-                                    src="img/football.jpg"
+                                    src="img/test-1_1280.jpg"
                                     class="c-card__img"
                                     alt="..."
                                 />
-                                <figcaption class="c-card__figure-caption">
-                                    A caption for the above image.
-                                </figcaption>
                             </figure>
                             <div class="c-card__body">
-                                <p class="c-card__category">
-                                    <span class="badge bg-primary">News</span>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <a href="cat"
+                                        ><span
+                                            class="badge bg-primary rounded-4 c-card__category mb-1"
+                                            >News</span
+                                        ></a
+                                    >
+                                    <a href="date">
+                                        <span class="fw-bold c-card__date"
+                                            >19 / September / 22</span
+                                        >
+                                    </a>
+                                </div>
+                                <a href="title">
+                                    <p class="c-card__title">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Labore, vero.
+                                    </p>
+                                </a>
+                                <p class="c-card__excerpt">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Totam nesciunt Lorem ...
                                 </p>
-                                <p class="c-card__title">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Labore, vero.
-                                </p>
-                                <p class="c-card__info">
-                                    <span>Author</span> <span class="">-</span>
-                                    <span>00 000 000</span>
-                                </p>
+                                <div class="flex-fill"></div>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <a href="profile">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center"
+                                        >
+                                            <div
+                                                class="bg-dark rounded-circle p-3 me-2 c-card__profile"
+                                            ></div>
+                                            <span class="fw-bold c-card__author"
+                                                >Arkar Soe</span
+                                            >
+                                        </div>
+                                    </a>
+                                    <a href="readmore">
+                                        <button
+                                            class="btn btn-outline-primary rounded-5 c-card__btn"
+                                        >
+                                            Read More
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="c-card">
                             <figure class="c-card__figure">
                                 <img
-                                    src="img/football.jpg"
+                                    src="img/test-1_1280.jpg"
                                     class="c-card__img"
                                     alt="..."
                                 />
-                                <figcaption class="c-card__figure-caption">
-                                    A caption for the above image.
-                                </figcaption>
                             </figure>
                             <div class="c-card__body">
-                                <p class="c-card__category">
-                                    <span class="badge bg-primary">News</span>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <a href="cat"
+                                        ><span
+                                            class="badge bg-primary rounded-4 c-card__category mb-1"
+                                            >News</span
+                                        ></a
+                                    >
+                                    <a href="date">
+                                        <span class="fw-bold c-card__date"
+                                            >19 / September / 22</span
+                                        >
+                                    </a>
+                                </div>
+                                <a href="title">
+                                    <p class="c-card__title">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Labore, vero.
+                                    </p>
+                                </a>
+                                <p class="c-card__excerpt">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Totam nesciunt Lorem ...
                                 </p>
-                                <p class="c-card__title">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Labore, vero.
-                                </p>
-                                <p class="c-card__info">
-                                    <span>Author</span> <span class="">-</span>
-                                    <span>00 000 000</span>
-                                </p>
+                                <div class="flex-fill"></div>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <a href="profile">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center"
+                                        >
+                                            <div
+                                                class="bg-dark rounded-circle p-3 me-2 c-card__profile"
+                                            ></div>
+                                            <span class="fw-bold c-card__author"
+                                                >Arkar Soe</span
+                                            >
+                                        </div>
+                                    </a>
+                                    <a href="readmore">
+                                        <button
+                                            class="btn btn-outline-primary rounded-5 c-card__btn"
+                                        >
+                                            Read More
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -394,9 +727,13 @@
                 </div>
             </div>
             <div class="spacer"></div>
-            <div class="row py-3 py-lg-5 text-center">
-                <span> © New Day all Rights Reserved </span>
-            </div>
+            <footer>
+                <div class="row py-5 text-center">
+                    <div class="footer">
+                        <span> © New Day all Rights Reserved </span>
+                    </div>
+                </div>
+            </footer>
         </div>
         <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 

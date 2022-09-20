@@ -1,10 +1,14 @@
-$dropdown-bgcolor: rgba(255, 255, 255, 0.815);
+$dropdown-bgcolor: rgb(255, 255, 255);
 $dropdown-bg-event-color: white;
 $dropdown-color: black;
 
 .c-dropdown {
     position: relative;
     display: inline-block;
+
+    a {
+        color: $dropdown-color;
+    }
 
     &__img {
         width: 30px;
@@ -16,7 +20,6 @@ $dropdown-color: black;
 
     &__btn {
         border: none;
-        border-radius: $border-radius;
         background-color: $dropdown-bgcolor;
         font-size: $c-font-sm;
         color: $dropdown-color;
@@ -35,7 +38,6 @@ $dropdown-color: black;
 
     &__menu {
         background-color: $dropdown-bgcolor;
-        border-radius: $border-radius;
         display: none;
         margin-top: 5px;
         position: absolute;
@@ -43,6 +45,7 @@ $dropdown-color: black;
         width: 100%;
         list-style-type: none;
         outline: 1px solid $mid-grey;
+        border: none;
         right: 0;
     }
 

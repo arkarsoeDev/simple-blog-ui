@@ -8,6 +8,7 @@ $fontf-post-title: "Barlow", sans-serif;
         display: flex;
         flex-direction: column;
         margin-bottom: 1rem;
+        font-size: $c-font-sm;
 
         @include breakpoint(small) {
             justify-content: space-between;
@@ -29,7 +30,7 @@ $fontf-post-title: "Barlow", sans-serif;
         min-width: 280px;
         width: 530px;
         min-height: 160px;
-        height: 300px;
+        height: 200px;
         border-radius: $border-radius;
 
         @include breakpoint(small) {
@@ -50,4 +51,10 @@ $fontf-post-title: "Barlow", sans-serif;
             margin-right: 8px;
         }
     }
+
+    &__category {
+        font-size: $c-font-sm;
+    }
+
+    
 }

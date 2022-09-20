@@ -2,41 +2,50 @@
 // $border-radius
 // for color -- $secondary, $mid-grey
 // for font-size -- $c-font-lg, $c-font-sm, $c-font-nm, $c-font-xl
-// $fontf-card-title: "Playfair Display", serif;
-$fontf-card-title: "Barlow", sans-serif;
+$fontf-card-title: "Roboto", sans-serif;
 
 .c-card {
     min-width: 280px;
     min-height: 330px;
     transition: all 0.3s ease-in-out;
-    margin-bottom: 1rem;
+    margin-bottom: 1.75rem;
     border-radius: $border-radius;
     border: 1px solid transparent;
     padding: 0.5rem;
 
+    & * {
+        color: $black;
+        font-size: $c-font-xxs;
+
+        @include breakpoint(medium) {
+            font-size: $c-font-xs;
+        }
+
+        @include breakpoint(xlarge) {
+            font-size: $c-font-nm;
+        }
+    }
+
     @include breakpoint(small) {
+        min-width: 250px;
         padding: 1rem;
+        margin-bottom: 1rem;
     }
 
     @include on-event {
-        cursor: pointer;
         background-color: $light-grey;
         border: 1px solid $normal-grey;
-
-        .c-card__title {
-            text-decoration: underline;
-        }
     }
 
     &__img {
         min-width: 260px;
         width: 100%;
-        height: 200px;
+        height: 150px;
         border-radius: $border-radius;
         margin-bottom: 4px;
 
         @include breakpoint(small) {
-            height: 250px;
+            min-width: 200px;
         }
 
         @include breakpoint(large) {
@@ -45,7 +54,7 @@ $fontf-card-title: "Barlow", sans-serif;
     }
 
     &__category {
-        margin-top: 10px;
+        color: white;
         margin-bottom: 0;
         span:not(:last-child) {
             margin-right: 10px;
@@ -53,17 +62,32 @@ $fontf-card-title: "Barlow", sans-serif;
     }
 
     &__title {
-        font-size: $c-font-lg;
+        font-size: $c-font-nm;
         font-family: $fontf-card-title;
-        margin-top: 10px;
+        font-weight: 500;
+        color: $primary;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+
+        @include breakpoint(medium) {
+            font-size: $c-font-lg;
+        }
+
+        @include breakpoint(xlarge) {
+            font-size: $c-font-xl;
+        }
+    }
+
+    &__excerpt {
+        margin-bottom: 1rem;
     }
 
     &__info {
-        font-size: $c-font-nm;
+        font-size: $c-font-sm;
     }
 
     &__figure {
-        margin-bottom: 8px;
+        margin-bottom: 0.5rem;
     }
 
     &__figure-caption {
@@ -72,7 +96,7 @@ $fontf-card-title: "Barlow", sans-serif;
     }
 
     &--small {
-        min-height: 200px;
+        min-height: 120px;
         min-width: 280px;
 
         @include breakpoint(small) {
@@ -88,41 +112,66 @@ $fontf-card-title: "Barlow", sans-serif;
             gap: 0;
         }
 
-        .c-card {
-            &__img {
-                width: 180px;
-                height: 100px;
+        &.c-card {
+            padding: 0;
 
-                @include breakpoint(small) {
-                    min-width: 100px;
-                }
+            @include on-event {
+                cursor: default;
+                background-color: $white;
+                border: 1px solid transparent;
 
-                @include breakpoint(large) {
-                    min-width: 250px;
-                    width: 348px;
-                    height: 150px;
+                .c-card__title {
+                    text-decoration: none;
                 }
             }
+        }
+
+        .c-card {
+            // &__img {
+            //     width: 180px;
+            //     height: 100px;
+
+            //     @include breakpoint(small) {
+            //         min-width: 100px;
+            //     }
+
+            //     @include breakpoint(large) {
+            //         min-width: 250px;
+            //         width: 348px;
+            //         height: 150px;
+            //     }
+            // }
 
             &__category {
-                margin-top: 10px;
+                margin-top: 0.5rem;
 
                 @include breakpoint(small) {
                     margin-top: 0;
                 }
 
                 @include breakpoint(large) {
-                    margin-top: 10px;
+                    margin-top: 0.5rem;
                 }
             }
 
-            &__info {
-                font-size: $c-font-xs;
-                margin-top: 10px;
-            }
+            // &__info {
+            //     font-size: $c-font-xs;
+            //     margin-top: 0.5rem;
+            //     margin-bottom: 0px;
+            // }
 
             &__title {
                 font-size: $c-font-nm;
+                margin-bottom: 0.5rem;
+
+                @include on-event {
+                    cursor: pointer;
+                    text-decoration: underline !important;
+                }
+            }
+
+            &__excert {
+                font-size: $c-font-xs;
                 margin-bottom: 0;
             }
         }
@@ -130,7 +179,7 @@ $fontf-card-title: "Barlow", sans-serif;
 
     &--large {
         &.c-card {
-            @include breakpoint(medium) {
+            @include breakpoint(large) {
                 width: 100%;
                 min-height: 300px;
                 display: flex;
@@ -141,28 +190,30 @@ $fontf-card-title: "Barlow", sans-serif;
 
         .c-card {
             &__img {
-                @include breakpoint(medium) {
+                @include breakpoint(large) {
                     min-width: 400px;
                     min-height: 300px;
                 }
             }
 
             &__body {
-                @include breakpoint(medium) {
+                @include breakpoint(large) {
                     width: 50%;
                     padding-right: 10%;
+                    display: flex;
+                    flex-flow: column;
                 }
             }
 
             &__category {
-                @include breakpoint(medium) {
+                @include breakpoint(large) {
                     margin-top: 0;
                 }
             }
 
             &__title {
-                @include breakpoint(medium) {
-                    font-size: $c-font-xl;
+                @include breakpoint(large) {
+                    font-size: $c-font-xxl;
                 }
             }
         }
@@ -170,7 +221,7 @@ $fontf-card-title: "Barlow", sans-serif;
 
     &--horizontal {
         &.c-card {
-            @include breakpoint(small) {
+            @include breakpoint(large) {
                 width: 100%;
                 min-height: 200px;
                 display: flex;
@@ -180,11 +231,25 @@ $fontf-card-title: "Barlow", sans-serif;
 
         .c-card {
             &__img {
-                @include breakpoint(small) {
+                @include breakpoint(large) {
                     min-width: 200px;
                     max-width: 200px;
                     height: 200px;
-                    margin-right: 10px;
+                    margin-right: 0.5rem;
+                    margin-bottom: 0;
+                }
+            }
+
+            &__figure {
+                @include breakpoint(small) {
+                    margin-bottom: 0;
+                }
+            }
+
+            &__title {
+                @include breakpoint(large) {
+                    margin: 0;
+                    font-size: $c-font-lg;
                 }
             }
 
@@ -192,17 +257,17 @@ $fontf-card-title: "Barlow", sans-serif;
                 @include breakpoint(small) {
                     width: 100%;
                 }
-            }
 
-            &__category {
                 @include breakpoint(small) {
-                    margin-top: 0;
+                    display: flex;
+                    flex-flow: column;
                 }
             }
 
-            &__title {
-                @include breakpoint(small) {
-                    font-size: $c-font-lg;
+            &__excerpt {
+                margin-bottom: 1rem;
+                @include breakpoint(large) {
+                    margin-bottom: 0.5rem;
                 }
             }
         }

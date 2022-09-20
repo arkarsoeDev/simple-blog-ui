@@ -9,29 +9,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
-
-        <!-- RobotoSlab -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&display=swap"
-            rel="stylesheet"
-        />
-
-        <!-- Barlow -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;700&display=swap"
-            rel="stylesheet"
-        />
-
-        <!-- open sans -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-            rel="stylesheet"
-        />
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-lg-5">
             <div class="container-fluid">
                 <a class="navbar-brand h3 mb-0" href="#">New Day</a>
+                <div class="flex-fill d-lg-none"></div>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -43,11 +26,12 @@
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div
                     class="collapse navbar-collapse"
                     id="navbarSupportedContent"
                 >
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-0">
                         <li class="nav-item">
                             <a
                                 class="nav-link active"
@@ -60,7 +44,7 @@
                             <a class="nav-link" href="posts.html">Posts</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav mb-2 mb-lg-0">
+                    <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Login</a>
                         </li>
@@ -68,16 +52,16 @@
                             <a class="nav-link" href="#">Register</a>
                         </li>
                         <li class="nav-item">
-                            <div id="" class="c-dropdown my-2 my-lg-0">
+                            <div id="" class="c-dropdown my-2 my-lg-0 ms-lg-3">
                                 <button
-                                    class="c-dropdown__btn c-dropdown__btn--row"
+                                    class="c-dropdown__btn c-dropdown__btn--row rounded-5"
                                     type="button"
                                     aria-expanded="false"
                                 >
                                     <div class="c-dropdown__img"></div>
                                     <span class="disabled">Arkar Soe</span>
                                 </button>
-                                <ul class="c-dropdown__menu">
+                                <ul class="c-dropdown__menu rounded-4">
                                     <li>
                                         <a class="c-dropdown__item" href="#"
                                             >dashboar</a
@@ -126,7 +110,7 @@
                                 A caption for the above image.
                             </figcaption>
                         </figure>
-                        <div class="post__info-container">
+                        <!-- <div class="post__info-container">
                             <div class="post__category">
                                 <span class="badge bg-primary">News</span>
                             </div>
@@ -137,6 +121,38 @@
                                     ><i class="fa-solid fa-calendar-days"></i> 9
                                     Sep 2022</span
                                 >
+                            </div>
+                        </div> -->
+                        <div class="post__info-container">
+                            <a href="cat"
+                                ><span
+                                    class="badge bg-primary rounded-4 post__category mb-3 mb-sm-0"
+                                    >News</span
+                                ></a
+                            >
+                            <div
+                                class="d-flex justify-content-end justify-content-sm-between align-items-center flex-wrap"
+                            >
+                                <a href="profile">
+                                    <div
+                                        class="d-flex justify-content-between align-items-center me-lg-3 mb-3 mb-sm-0"
+                                    >
+                                        <div
+                                            class="bg-dark rounded-circle p-3 me-2 post__profile"
+                                        ></div>
+                                        <span class="fw-bold post__author"
+                                            >Arkar Soe</span
+                                        >
+                                    </div>
+                                </a>
+                                <div class="dash d-none"></div>
+                                <a href="date">
+                                    <span
+                                        class="fw-bold post__date d-inline-block ms-3 mb-3 mb-sm-0"
+                                        ><i class="fa fa-calendar"></i> 19 /
+                                        September / 22</span
+                                    >
+                                </a>
                             </div>
                         </div>
                         <h1 class="post__title">
@@ -193,8 +209,19 @@
                         </h3>
                         <div class="comments">
                             <div class="comment">
+                                <a href="profile">
+                                    <div
+                                        class="d-inline-flex justify-content-start align-items-center mb-2"
+                                    >
+                                        <div
+                                            class="bg-dark rounded-circle p-3 me-2 c-card__profile"
+                                        ></div>
+                                        <span class="fw-bold c-card__author"
+                                            >Arkar Soe</span
+                                        >
+                                    </div>
+                                </a>
                                 <div class="comment__content">
-                                    <div class="comment__avatar"></div>
                                     <p class="comment__text">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Rem quo laborum saepe
@@ -204,13 +231,26 @@
                                         voluptatem odio?
                                     </p>
                                 </div>
+
                                 <div class="comment__date">
-                                    <span>00 000 000</span>
+                                    <span>20 Sept 22</span>
                                 </div>
                             </div>
                             <div class="comment">
+                                <a href="profile">
+                                    <div
+                                        class="d-inline-flex justify-content-start align-items-center mb-2"
+                                    >
+                                        <div
+                                            class="bg-dark rounded-circle p-3 me-2 c-card__profile"
+                                        ></div>
+                                        <span class="fw-bold c-card__author"
+                                            >Arkar Soe</span
+                                        >
+                                    </div>
+                                </a>
+
                                 <div class="comment__content">
-                                    <div class="comment__avatar"></div>
                                     <p class="comment__text">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Rem quo laborum saepe
@@ -220,13 +260,26 @@
                                         voluptatem odio?
                                     </p>
                                 </div>
+
                                 <div class="comment__date">
-                                    <span>00 000 000</span>
+                                    <span>20 Sept 22</span>
                                 </div>
                             </div>
                             <div class="comment">
+                                <a href="profile">
+                                    <div
+                                        class="d-inline-flex justify-content-start align-items-center mb-2"
+                                    >
+                                        <div
+                                            class="bg-dark rounded-circle p-3 me-2 c-card__profile"
+                                        ></div>
+                                        <span class="fw-bold c-card__author"
+                                            >Arkar Soe</span
+                                        >
+                                    </div>
+                                </a>
+
                                 <div class="comment__content">
-                                    <div class="comment__avatar"></div>
                                     <p class="comment__text">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Rem quo laborum saepe
@@ -236,13 +289,16 @@
                                         voluptatem odio?
                                     </p>
                                 </div>
+
                                 <div class="comment__date">
-                                    <span>00 000 000</span>
+                                    <span>20 Sept 22</span>
                                 </div>
                             </div>
                         </div>
                         <div class="w-100 text-center mb-3 mb-lg-0">
-                            <button class="btn btn-primary">Show All</button>
+                            <button class="btn btn-primary rounded-pill">
+                                Show All
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -254,30 +310,15 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="c-card c-card--small my-3">
-                                <figure class="figure mb-0">
-                                    <img
-                                        src="img/football.jpg"
-                                        class="figure-img img-fluid c-card__img"
-                                        alt="A picture of football player"
-                                    />
-                                    <figcaption class="c-card__figure-caption">
-                                        A picture of football player
-                                    </figcaption>
-                                </figure>
                                 <div class="c-card__body">
-                                    <p class="c-card__category">
-                                        <span class="badge bg-primary"
-                                            >News</span
-                                        >
-                                    </p>
                                     <p class="c-card__title">
                                         Lorem ipsum dolor sit amet, consectetur
                                         adipisicing elit. Labore, vero.
                                     </p>
-                                    <p class="c-card__info">
-                                        <span>Author</span>
-                                        <span class="">-</span>
-                                        <span>00 000 000</span>
+                                    <p class="c-card__excert">
+                                        Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Totam nesciunt Lorem
+                                        ...
                                     </p>
                                 </div>
                             </div>
@@ -286,30 +327,15 @@
 
                         <div class="col-12">
                             <div class="c-card c-card--small my-3">
-                                <figure class="figure mb-0">
-                                    <img
-                                        src="img/football.jpg"
-                                        class="figure-img img-fluid c-card__img"
-                                        alt="A picture of football player"
-                                    />
-                                    <figcaption class="c-card__figure-caption">
-                                        A picture of football player
-                                    </figcaption>
-                                </figure>
                                 <div class="c-card__body">
-                                    <p class="c-card__category">
-                                        <span class="badge bg-primary"
-                                            >News</span
-                                        >
-                                    </p>
                                     <p class="c-card__title">
                                         Lorem ipsum dolor sit amet, consectetur
                                         adipisicing elit. Labore, vero.
                                     </p>
-                                    <p class="c-card__info">
-                                        <span>Author</span>
-                                        <span class="">-</span>
-                                        <span>00 000 000</span>
+                                    <p class="c-card__excert">
+                                        Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Totam nesciunt Lorem
+                                        ...
                                     </p>
                                 </div>
                             </div>
@@ -317,41 +343,31 @@
                         </div>
                         <div class="col-12">
                             <div class="c-card c-card--small my-3">
-                                <figure class="figure mb-0">
-                                    <img
-                                        src="img/test-1_1280.jpg"
-                                        class="figure-img img-fluid c-card__img"
-                                        alt="A picture of football player"
-                                    />
-                                    <figcaption class="c-card__figure-caption">
-                                        A picture of football player
-                                    </figcaption>
-                                </figure>
                                 <div class="c-card__body">
-                                    <p class="c-card__category">
-                                        <span class="badge bg-primary"
-                                            >News</span
-                                        >
-                                    </p>
                                     <p class="c-card__title">
                                         Lorem ipsum dolor sit amet, consectetur
                                         adipisicing elit. Labore, vero.
                                     </p>
-                                    <p class="c-card__info">
-                                        <span>Author</span>
-                                        <span class="">-</span>
-                                        <span>00 000 000</span>
+                                    <p class="c-card__excert">
+                                        Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Totam nesciunt Lorem
+                                        ...
                                     </p>
                                 </div>
                             </div>
+                            <div class="spacer"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="spacer"></div>
-            <div class="row py-3 py-lg-5 text-center">
-                <span> © New Day all Rights Reserved </span>
-            </div>
+            <div class="spacer d-none d-lg-block"></div>
+            <footer>
+                <div class="row py-5 text-center">
+                    <div class="footer">
+                        <span> © New Day all Rights Reserved </span>
+                    </div>
+                </div>
+            </footer>
         </div>
 
         <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>

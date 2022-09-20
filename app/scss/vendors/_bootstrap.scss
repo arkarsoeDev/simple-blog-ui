@@ -5,7 +5,8 @@
 
 // 2. Include any default variable overrides here
 $primary: #25316d;
-$secondary: #97d2ec;
+$secondary: #2599cd;
+$brand-color: $secondary; // overwrite the variables
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../../../node_modules/bootstrap/scss/_variables.scss";
